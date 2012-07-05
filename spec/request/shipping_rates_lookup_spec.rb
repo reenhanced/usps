@@ -16,7 +16,6 @@ describe USPS::Request::ShippingRatesLookup do
   end
 
   it "should be able to build a proper request" do
-    USPS.username = '591REENH7607'
     package = USPS::Package.new do |p|
       p.id = "42"
       p.service = "ALL"
@@ -27,7 +26,18 @@ describe USPS::Request::ShippingRatesLookup do
       p.container = 'VARIABLE'
       p.size = 'LARGE'
     end
-    request = USPS::Request::ShippingRatesLookup.new(package)
-    request.send!
+    request = USPS::Request::ShippingRatesLookup.new(package).build
+    xml = Nokogiri::XML.parse(request)
+
+    xml.search('Package').count.should == 1
+    p1 = xml.search('Package').first
+    p1.attr('ID').should == "42"
+    p1.search('Service').text.should == 'ALL'
+    p1.search('ZipOrigination').text.should == '20171'
+    p1.search('ZipDestination').text.should == '08540'
+    p1.search('Pounds').text.should == '5'
+    p1.search('Ounces').text.should == '4'
+    p1.search('Container').text.should == 'VARIABLE'
+    p1.search('Size').text.should == 'LARGE'
   end
 end

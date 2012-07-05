@@ -20,13 +20,13 @@ module USPS::Request
         @packages.each do |package|
           xml.Package :ID => package.id do
             xml.Service package.service
-            xml.ZipOrigination '20171'
-            xml.ZipDestination '08540'
-            xml.Pounds 2
-            xml.Ounces 0
-            xml.Container 'VARIABLE'
-            xml.Size 'REGULAR'
-            xml.Machinable 'true'
+            xml.ZipOrigination package.origin_zip
+            xml.ZipDestination package.destination_zip
+            xml.Pounds package.pounds
+            xml.Ounces package.ounces
+            xml.Container package.container
+            xml.Size package.size
+            xml.Machinable 'true' # for Service=ALL
           end
         end
       end

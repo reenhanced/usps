@@ -5,8 +5,16 @@ module USPS::Response
     def initialize(xml)
       @packages = []
       xml.search('Package').each do |pkg_node|
-        postages = pkg_node.search('Postage').map { |postage| parse_postage(postage) }
-        @packages << USPS::PackageResponse.new(postages)
+        @packages << USPS::PackageResponse.new do |p|
+          p.postages = pkg_node.search('Postage').map { |postage| parse_postage(postage) }
+          p.id = pkg_node.attr('ID')
+          p.pounds = pkg_node.search('Pounds').text
+          p.ounces = pkg_node.search('Ounces').text
+          p.size = pkg_node.search('Size').text
+          p.container = pkg_node.search('Container').text
+          p.origin_zip = pkg_node.search('ZipOrigination').text
+          p.destination_zip = pkg_node.search('ZipDestination').text
+        end
       end
     end
 

@@ -14,13 +14,13 @@ module USPS
     end
   end
 
-  class PackageResponse# < Package
+  class PackageResponse < Struct.new(:id, :origin_zip, :destination_zip, :pounds, :ounces, :container, :size)
 
     attr_accessor :postages
 
-    def initialize(postages)
-      self.postages = postages
-      #super(properties)
+    def initialize(properties = {})
+      properties.each_pair { |k, v| send("#{k}=", v) }
+      yield self if block_given?
     end
   end
 
