@@ -16,7 +16,18 @@ describe USPS::Request::ShippingRatesLookup do
   end
 
   it "should be able to build a proper request" do
-    request = USPS::Request::ShippingRatesLookup
-    pending
+    USPS.username = '591REENH7607'
+    package = USPS::Package.new do |p|
+      p.id = "42"
+      p.service = "ALL"
+      p.origin_zip = "20171"
+      p.destination_zip = "08540"
+      p.pounds = 5
+      p.ounces = 4
+      p.container = 'VARIABLE'
+      p.size = 'LARGE'
+    end
+    request = USPS::Request::ShippingRatesLookup.new(package)
+    request.send!
   end
 end

@@ -5,13 +5,15 @@ module USPS
   require 'usps/errors'
   require 'usps/configuration'
 
-  autoload :Client,        'usps/client'
-  autoload :Address,       'usps/address'
-  autoload :Request,       'usps/request'
-  autoload :VERSION,       'usps/version'
-  autoload :Response,      'usps/response'
-  autoload :TrackDetail,   'usps/track_detail'
-  autoload :Package,       'usps/package'
+  autoload :Client,          'usps/client'
+  autoload :Address,         'usps/address'
+  autoload :Request,         'usps/request'
+  autoload :VERSION,         'usps/version'
+  autoload :Response,        'usps/response'
+  autoload :TrackDetail,     'usps/track_detail'
+  autoload :Package,         'usps/package'
+  autoload :PackageResponse, 'usps/package'
+  autoload :Postage,         'usps/package'
 
   class << self
     attr_writer :config

@@ -26,6 +26,7 @@ module USPS::Request
             xml.Ounces 0
             xml.Container 'VARIABLE'
             xml.Size 'REGULAR'
+            xml.Machinable 'true'
           end
         end
       end
