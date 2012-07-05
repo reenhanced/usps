@@ -11,6 +11,7 @@ module USPS
   autoload :VERSION,       'usps/version'
   autoload :Response,      'usps/response'
   autoload :TrackDetail,   'usps/track_detail'
+  autoload :Package,       'usps/package'
 
   class << self
     attr_writer :config

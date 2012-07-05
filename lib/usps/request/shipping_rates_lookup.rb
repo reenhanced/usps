@@ -1,9 +1,5 @@
 module USPS::Request
 
-  class Package
-    attr_accessor :id
-  end
-
   class ShippingRatesLookup < Base
     config(
       :api => 'RateV4',
@@ -15,7 +11,7 @@ module USPS::Request
     def initialize(*packages)
       @packages = packages.flatten
       if @packages.none?
-        raise ArgumentError, 'at most 5 addresses can be verified at a time'
+        raise ArgumentError, 'A shipping rate lookup requires at least one package (USPS::Package)'
       end
     end
 
