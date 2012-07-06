@@ -12,7 +12,7 @@ module USPS
   autoload :Response,        'usps/response'
   autoload :TrackDetail,     'usps/track_detail'
   autoload :Package,         'usps/package'
-  autoload :PackageResponse, 'usps/package'
+  autoload :PackageResponse, 'usps/package_response'
   autoload :Postage,         'usps/package'
 
   class << self

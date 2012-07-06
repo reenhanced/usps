@@ -2,17 +2,17 @@ require 'spec_helper'
 
 describe USPS::Response::ShippingRatesLookup do
 
-  it "should handle test request" do
+  it "correctly parses a USPS RateV4 XML response" do
     response = USPS::Response::ShippingRatesLookup.new(load_xml("shipping_rates_lookup.xml"))
     response.should have(1).packages
-    response.packages.first.tap do |p|
-      p.should have(5).postages
-      p.id.should == '42'
-      p.origin_zip.should == '20171'
-      p.destination_zip.should == '08540'
-      p.pounds.should == '2'
-      p.ounces.should == '0'
-      p.size.should == 'REGULAR'
+    response.packages.first.tap do |package|
+      package.should have(5).postages
+      package.id.should              == '42'
+      package.origin_zip.should      == '20171'
+      package.destination_zip.should == '08540'
+      package.pounds.should          == '2'
+      package.ounces.should          == '0'
+      package.size.should            == 'REGULAR'
     end
   end
 end
