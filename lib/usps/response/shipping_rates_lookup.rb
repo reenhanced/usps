@@ -21,7 +21,7 @@ module USPS::Response
     private
 
     def parse_postage(node)
-      USPS::PackageResponse::Postage.new.tap do |postage|
+      USPS::Postage.new.tap do |postage|
         postage.class_id     = node.attr('CLASSID')
         postage.mail_service = node.search('MailService').text
         postage.rate         = node.search('Rate').text
