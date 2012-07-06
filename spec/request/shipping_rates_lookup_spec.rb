@@ -16,7 +16,7 @@ describe USPS::Request::ShippingRatesLookup do
   end
 
   it "builds a valid XML request for USPS RateV4" do
-    package             = USPS::Package.new do |new_package|
+    package = USPS::Package.new do |new_package|
       new_package.id              = "42"
       new_package.service         = "ALL"
       new_package.origin_zip      = "20171"
