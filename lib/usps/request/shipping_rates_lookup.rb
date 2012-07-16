@@ -16,7 +16,6 @@ module USPS::Request
     end
 
     def build
-      puts "YES, SETTING DIMENSIONS"
       super do |xml|
         @packages.each do |package|
           xml.Package :ID => package.id do
