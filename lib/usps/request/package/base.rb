@@ -6,7 +6,7 @@ module USPS::Request::Package
     attr_accessor :size
     attr_accessor :width, :length, :height, :girth
 
-    @@required = [:id, :pounds, :ounces, :size]
+    @required = [:id, :pounds, :ounces, :size]
 
     def initialize(fields)
       fields.each { |name, value| send("#{name}=", value) }
@@ -19,12 +19,16 @@ module USPS::Request::Package
         end
       end
 
-      @@required.each do |field|
+      self.class.required_properties.each do |field|
         error "#{field} is required" unless send(field)
       end
     end
 
     protected
+
+    def self.required_properties
+      @required + (defined?(super) ? super : [])
+    end
 
     def error(message)
       raise ArgumentError.new message

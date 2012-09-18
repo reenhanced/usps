@@ -6,7 +6,7 @@ module USPS::Request::Package
     attr_accessor :value
     attr_accessor :amount_to_collect
 
-    @@required += [:service, :origin_zip, :destination_zip]
+    @required = [:service, :origin_zip, :destination_zip]
 
     def initialize(fields = {})
       if fields[:service] == 'FIRST CLASS' and !fields[:first_class_mail_type]

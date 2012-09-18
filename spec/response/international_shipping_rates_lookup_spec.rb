@@ -17,7 +17,7 @@ describe USPS::Response::InternationalShippingRatesLookup do
 
       package.services[1].tap do |express|
         express.id.should          == '1'
-        express.rate.should        == '103.00'
+        express.rate.should        == '73.45'
         express.description.should =~ /Express Mail/
       end
     end
