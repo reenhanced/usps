@@ -1,0 +1,162 @@
+<?xml version="1.0"?>
+<IntlRateV2Response>
+  <Package ID="3">
+    <Prohibitions>Arms, ammunitions, and parts and accessories thereof, except that hunting guns or similar guns belonging to legal persons are admitted with agreement of the Romanian police department.
+Coins; bank notes; currency notes; or securities of any kind payable to bearer; traveler's checks; platinum, gold, or silver (whether manufactured or not), precious stones; jewelry; or other valuable articles.
+Explosives, pyrotechnic products; matches, pyrophoric alloys, and combustible preparations.
+Indecent or obscene books, cards, photographs, manuscripts, typescripts, or other products of the printing industry.
+Perishable infectious biological substances.
+Perishable noninfectious biological substances.
+Radioactive materials.
+Tobacco and manufactured tobacco substitutes.</Prohibitions>
+    <Restrictions>Many items are admitted conditionally subject to permits or certificates (such as veterinary health or phytosanitary certificates for products of animal or vegetable origin) issued by the Romanian legal authorities. 
+Pharmaceutical products are admitted only with the agreement of the Ministry of Health. 
+Vitamins require a permit issued by the Ministry of Health or Ministry of Agriculture.</Restrictions>
+    <Observations>None.</Observations>
+    <CustomsForms>First-Class Mail International items and Priority Mail International Flat Rate Envelopes and Small Flat Rate Boxes: 
+PS Form 2976 (see 123.61)
+Priority Mail International parcels:
+PS Form 2976-A inside 2976-E (envelope)</CustomsForms>
+    <ExpressMail>Country Code:  
+RO  
+
+Reciprocal Service Name:  
+Rapide Post/EMS  
+
+Required Customs Form/Endorsement 
+1. Correspondence and business papers.
+Two copies of PS Form 2976, Customs - CN 22 and Sender's Declaration. Endorse item clearly next to mailing label as DES DOCUMENTS COMMERCIAL (COMMERCIAL DOCUMENTS).
+ 
+2. Merchandise samples without commercial value.
+PS Form 2976, Customs - CN 22 and Sender's Declaration. Endorse item clearly next to mailing label as SAMPLES.
+ 
+3. Merchandise and all articles subject to customs duty.
+PS Form 2976-A, Customs Declaration and Dispatch Note CP 72, inside a PS Form 2976-E, Customs Declaration Envelope CP 91.
+ 
+Note:
+Coins; banknotes; currency notes, including paper money; securities of any kind payable to bearer; traveler's checks; platinum, gold, and silver; precious stones; jewelry; watches; and other valuable articles are prohibited in Express Mail International shipments to Romania. 
+
+Areas Served: All</ExpressMail>
+    <AreasServed>Please reference Express Mail for Areas Served.</AreasServed>
+    <AdditionalRestrictions>No Additional Restrictions Data found.</AdditionalRestrictions>
+    <Service ID="12">
+      <Pounds>7</Pounds>
+      <Ounces>0</Ounces>
+      <Machinable>true</Machinable>
+      <MailType>ALL</MailType>
+      <Container>RECTANGULAR</Container>
+      <Size>LARGE</Size>
+      <Width>12</Width>
+      <Length>12</Length>
+      <Height>13</Height>
+      <Girth>0</Girth>
+      <Country>ROMANIA</Country>
+      <Postage>197.00</Postage>
+      <ExtraServices>
+        <ExtraService>
+          <ServiceID>1</ServiceID>
+          <ServiceName>Insurance</ServiceName>
+          <Available>True</Available>
+          <Price>1.00</Price>
+          <DeclaredValueRequired>True</DeclaredValueRequired>
+        </ExtraService>
+      </ExtraServices>
+      <ValueOfContents>103.00</ValueOfContents>
+      <SvcCommitments>1 - 3 business days</SvcCommitments>
+      <SvcDescription>USPS GXG&amp;lt;sup&amp;gt;&amp;amp;trade;&amp;lt;/sup&amp;gt; Envelopes**</SvcDescription>
+      <MaxDimensions>USPS-Produced regular size cardboard envelope (12-1/2" x 9-1/2"), the legal-sized cardboard envelope (15" x 9-1/2") and the GXG Tyvek envelope (15-1/2" x 12-1/2")</MaxDimensions>
+      <MaxWeight>70</MaxWeight>
+    </Service>
+    <Service ID="1">
+      <Pounds>7</Pounds>
+      <Ounces>0</Ounces>
+      <Machinable>true</Machinable>
+      <MailType>ALL</MailType>
+      <Container>RECTANGULAR</Container>
+      <Size>LARGE</Size>
+      <Width>12</Width>
+      <Length>12</Length>
+      <Height>13</Height>
+      <Girth>0</Girth>
+      <Country>ROMANIA</Country>
+      <Postage>73.45</Postage>
+      <ExtraServices>
+        <ExtraService>
+          <ServiceID>1</ServiceID>
+          <ServiceName>Insurance</ServiceName>
+          <Available>True</Available>
+          <Price>0.85</Price>
+          <DeclaredValueRequired>True</DeclaredValueRequired>
+        </ExtraService>
+      </ExtraServices>
+      <ValueOfContents>103.00</ValueOfContents>
+      <SvcCommitments>3 - 5 business days</SvcCommitments>
+      <SvcDescription>Express Mail&amp;lt;sup&amp;gt;&amp;amp;reg;&amp;lt;/sup&amp;gt; International</SvcDescription>
+      <MaxDimensions>Max. length 36", max. length plus girth 79"</MaxDimensions>
+      <MaxWeight>70</MaxWeight>
+    </Service>
+    <Service ID="17">
+      <Pounds>7</Pounds>
+      <Ounces>0</Ounces>
+      <Machinable>true</Machinable>
+      <MailType>ALL</MailType>
+      <Container>RECTANGULAR</Container>
+      <Size>LARGE</Size>
+      <Width>12</Width>
+      <Length>12</Length>
+      <Height>13</Height>
+      <Girth>0</Girth>
+      <Country>ROMANIA</Country>
+      <Postage>38.00</Postage>
+      <ExtraServices>
+        <ExtraService>
+          <ServiceID>1</ServiceID>
+          <ServiceName>Insurance</ServiceName>
+          <Available>True</Available>
+          <Price>0.85</Price>
+          <DeclaredValueRequired>True</DeclaredValueRequired>
+        </ExtraService>
+      </ExtraServices>
+      <ValueOfContents>103.00</ValueOfContents>
+      <SvcCommitments>3 - 5 business days</SvcCommitments>
+      <SvcDescription>Express Mail&amp;lt;sup&amp;gt;&amp;amp;reg;&amp;lt;/sup&amp;gt; International Legal Flat Rate Envelope</SvcDescription>
+      <MaxDimensions>USPS-Produced Envelope: 15" x 9-1/2"&lt;br&gt;Maximum weight 20 pounds.</MaxDimensions>
+      <MaxWeight>20</MaxWeight>
+    </Service>
+    <Service ID="2">
+      <Pounds>7</Pounds>
+      <Ounces>0</Ounces>
+      <Machinable>true</Machinable>
+      <MailType>ALL</MailType>
+      <Container>RECTANGULAR</Container>
+      <Size>LARGE</Size>
+      <Width>12</Width>
+      <Length>12</Length>
+      <Height>13</Height>
+      <Girth>0</Girth>
+      <Country>ROMANIA</Country>
+      <Postage>61.10</Postage>
+      <ExtraServices>
+        <ExtraService>
+          <ServiceID>1</ServiceID>
+          <ServiceName>Insurance</ServiceName>
+          <Available>True</Available>
+          <Price>2.45</Price>
+          <DeclaredValueRequired>True</DeclaredValueRequired>
+        </ExtraService>
+        <ExtraService>
+          <ServiceID>6</ServiceID>
+          <ServiceName>Certificate of Mailing</ServiceName>
+          <Available>True</Available>
+          <Price>1.15</Price>
+        </ExtraService>
+      </ExtraServices>
+      <ValueOfContents>103.00</ValueOfContents>
+      <ParcelIndemnityCoverage>85.64</ParcelIndemnityCoverage>
+      <SvcCommitments>6 - 10 business days</SvcCommitments>
+      <SvcDescription>Priority Mail&amp;lt;sup&amp;gt;&amp;amp;reg;&amp;lt;/sup&amp;gt; International</SvcDescription>
+      <MaxDimensions>Max. length 42", max. length plus girth combined 79"</MaxDimensions>
+      <MaxWeight>70</MaxWeight>
+    </Service>
+  </Package>
+</IntlRateV2Response>
