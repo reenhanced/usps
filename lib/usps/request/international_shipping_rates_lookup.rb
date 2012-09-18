@@ -11,7 +11,7 @@ module USPS::Request
     def initialize(*packages)
       @packages = packages.flatten
       if @packages.none?
-        raise ArgumentError, 'A shipping rate lookup requires at least one package (USPS::Package)'
+        raise ArgumentError, 'An IntlRateV2 shipping rate lookup requires at least one package (USPS::Request::Package::InternationalPackage)'
       end
     end
 
